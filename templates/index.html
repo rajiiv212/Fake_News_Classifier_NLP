@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="templates/fake.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesoe.min,css"></script>
+    <script src="https://kit.fortawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+   <style>
+    body{
+        font-family: sans-serif ;
+    }
+    .dest{
+        font-size: 35px;
+    }
+    
+    
+    .outerbox {
+    background-image: url(stasic/images.jpeg);
+    background-repeat: repeat ;
+    /* height: 1000px; */
+    /* position: fixed; */
+    padding-top: 15px;
+    
+}
+
+li{
+
+
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+#unipadding{
+    padding: 0 30px 36% 30px;
+    background-color: white;
+    margin: 0px 90px;
+}
+
+
+header{
+    background-color: white;
+    padding: 0 0px;
+    margin: 20px 5px;
+    
+}
+
+.headbar {
+    float: left;
+    display: inline;
+    width: 100%;
+    background-color: #303030;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+
+.latest_newsarea span {
+    font-family: Oswald,sans-serif;
+    position: absolute;
+    background: pink;
+    color: #fff;
+    padding: 8px 30px;
+    font-size: larger;
+    position: absolute;
+}
+
+.social_area{
+    /* float: left; */
+    /* padding-right: 850px; */
+}
+
+.social_area ul li{
+    display: inline;
+    /* padding: 13px; */
+    /* border: solid; */
+    /* margin: -3px; */
+    width: 50px;
+    height: 50px;
+    font-family: monospace;
+    color: #fff;
+    border-radius: 30px;
+    border-color: #888;
+}
+
+.social_area ul{
+margin-top: 13px;
+    margin-right: 5px;
+}
+
+
+.social_area ul li img{
+    height: 30px;
+}
+
+#ticker01{
+    display: list-item;
+    background-color: #303030;
+    padding: 44px 0 0 0 ;
+    margin: 0;
+    list-style-type: none;
+    
+}
+
+#ticker01 li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.logo img{
+    height: 266px;
+}
+
+
+#navbar{
+    background-color: pink;
+    margin-top: 50px;
+}
+
+#navbar ul {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 0;
+
+}
+
+#navbar ul li{
+    padding: 15px;
+    font-size: small;
+    list-style: none;
+}
+
+
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#navbar ul li:first-child{
+
+    background-color: #303030;
+}
+
+
+
+.newssectios{
+    display: flex;
+}
+
+.newssectios .fakeandreal{
+    width: 65%;
+    background: black;
+    color: white;
+}
+
+.newssectios .newsside{
+    width: 35%;
+}
+
+.modal-body,.modal-footer,.modal-header{
+    background:#fff;
+    border: none;
+    color: black;
+}
+.modal-header .close{
+    color: red;
+    text-shadow: none;
+    size: 1.9rem;
+}
+.close{
+    opacity: 1;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 20px;
+}
+
+.latest_post > h2{
+    background:none repeat scroll 0 0 #303030; 
+    color:#fff; 
+    font-family:'Oswald',sans-serif; 
+    font-size:18px; 
+    margin-top:5px; 
+    font-weight:400; 
+    margin-bottom:10px; 
+    margin-left:0; 
+    padding:0; 
+    position:relative; 
+    text-align:center; 
+    text-transform:uppercase}
+
+.latest_post > h2 span{
+    padding:4px 10px;
+    background-color:pink;
+
+
+}
+
+.latest_postnav{
+    height:auto !important; 
+    margin-top:20px;
+    padding-left: 24px ;
+}
+
+.latest_postnav li{
+    margin-bottom:10px; 
+    float:left; 
+    width:100%;
+    
+}
+
+.latest_postnav li a{
+    color: black;
+
+}
+.latest_post_container{
+    display:inline; 
+    float:left; 
+    height:430px; 
+    position:relative; 
+    width:100%
+}
+
+.latest_post .latest_post_container .latest_postnav img{
+    height: 90px;
+}
+
+.single_post_content {
+    float: left;
+    display: inline;
+    width: 65%;
+    margin: 60px 0;
+}
+
+.single_post_content h2 span {
+    padding: 4px 10px;
+    background-color: pink;
+}
+
+.left_content{
+    float:left; 
+    display:inline; 
+    width:100%;
+}
+.single_post_content{
+    float:left; 
+    display:inline; 
+    margin-bottom:20px;
+}
+.single_post_content > h2{
+    background:none repeat scroll 0 0 #303030; 
+    color:#fff; 
+    font-family:'Oswald',sans-serif; 
+    font-size:18px; 
+    font-weight:400; 
+    margin-bottom:10px; 
+    margin-left:0; 
+    margin-top:5px; 
+    padding:0; 
+    position:relative; 
+    text-align:center; 
+    text-transform:uppercase; 
+    margin-bottom:20px}
+.single_post_content_left{
+    float:left; 
+    display:inline; 
+    width:49%} 
+
+.realnews .single_post_content .single_post_content_left ul li img{
+
+    height: 190px;
+}
+
+.realnews .single_post_content .single_post_content_left ul li figcaption{
+    font-size: 24px;
+}
+
+
+.realnews .single_post_content .single_post_content_left ul li figcaption a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.realnews .single_post_content .single_post_content_right ul li img{
+    height: 90px;
+    padding: 10px;
+}
+
+
+.realnews .single_post_content .single_post_content_right ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer_bottom{float:left; display:inline; width:100%; padding:10px 30px; background-color:#303030; color:#ccc}
+.copyright{float:left; width:50%; padding-top:5px; text-align:left}
+.copyright a{color:#ccc}
+.developer{float:right; width:50%; text-align:right; padding-top:5px; color:#ccc}
+.developer a{color:#ccc}
+
+.single_post_content {
+    float: left;
+    display: inline;
+    margin-bottom: 0;
+}
+
+
+
+
+
+  </style> 
+</head>
+<body>
+    <div class="outerbox" style="background-image: url(static/images.jpeg);">
+        <div id="unipadding">
+        <header>
+            <div class="headbar">
+                <div class="latest_newsarea"> <span>Latest News</span>
+
+                </div>
+                <div class="social_area">
+                    <ul class="social_nav">
+                    <li class="facebook"><a href="#"><img src="static/downloadfdgfhh.png"></li>
+                    <li class="twitter"><a href="#"><img src="static/Twitter (Blue).svg"></li>
+                    <li class="googleplus"><a href="#"><img src="static/downloadffhjhjk.png"></li>
+                    <li class="youtube"><a href="#"><img src="static/downloadfghj.png"></li>
+                    <li class="mail"><a href="#"><img src="static/downloadfghjk.png"></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div>
+                <ul id="ticker01">
+                    <li><a href="https://graduatedunia.com/ibm-hiring-system-engineer-2021-freshers-batch-2018-2019-2020-latest-job-india/"><img src="static/star.svg" alt="">IBM Hiring System Engineer 2022 | Freshers Jobs | Batch-2020/2021/2022</a></li>
+                    <li><a href="https://graduatedunia.com/cognizant-fresher-hiring-2021-freshers-batch-2021-latest-job-last-chance-gen-c-developer/"><img src="static/star.svg" alt="">Cognizant Fresher Hiring 2023 | Freshers | Batch 2023 | Latest Job </a></li>
+                    <li><a href="https://graduatedunia.com/capgemini-tech-challenge-20-lpa-20-lakh-prize-freshers-or-experience-batch-2021-2020-2019-national-level-contest-it-jobs-2021/"><img src="static/star.svg" alt="">Capgemini Tech Challenge | 20 LPA (20 Lakh Prize) | Freshers or Experience | National Level Contest</a></li>
+                    <li><a href="https://graduatedunia.com/mphasis-hiring-voice-customer-support-officer-freshers-batch-2021-2020-2019-latest-job-it-jobs-2021-3-6-lpa/"><img src="static/star.svg" alt="">Mphasis Hiring Voice – Customer Support Officer | Freshers | Batch 2020/2021/2022 | Latest Job | IT Jobs 2022</a></li>
+                    <li><a href="https://graduatedunia.com/deloitte-hiring-intern-analyst-freshers-batch-2021-2020-2019-latest-job-it-jobs-2021-4-5-lpa/"><img src="static/star.svg" alt="">Deloitte Hiring Intern Analyst | Freshers | Batch 2020/2021/2022 | Latest Job | IT Jobs 2022 | 4-5 LPA</a></li>
+                    <li><a href="https://graduatedunia.com/category/medical/"><img src="static/star.svg" alt="">All Important Medical Courses Details</a></li>
+                    <li><a href="https://graduatedunia.com/category/engineering/"><img src="static/star.svg" alt="">All Important Engineering Courses Details</a></li>
+                    <li><a href="https://graduatedunia.com/category/3y-degree/"><img src="static/star.svg" alt="">All Important Bachelor Degree Courses Details</a></li>
+                  </ul>
+
+            </div>
+
+
+            <div class="logo">
+                <img src="static/news33.jpg">
+            </div>
+
+
+
+            <div id="navbar">
+                <ul >
+                  <li><a href="#">HOME</a></li>
+        
+                  <li><a href="https://graduatedunia.com/">Course & Job</a></li>
+                </ul>
+            </div>
+
+            <div class="newssectios">
+                <div class="fakeandreal">
+                    <div align="center" style="margin-top: 30px;" class="container">
+                        <div class="card bg-transparent">
+                            <div class="card-header bg-transparent">
+                                <p id="source" data-text="Real or Not? Fake News Detection !"></p>
+                                <h1 id="dest"></h1>
+                            </div><br>
+                            <div class="card-body bg-transparent">
+                                <form><br>
+                                    <textarea type="text" class="form-control bg-dark text-white" name="news" id="news" placeholder="Enter news here!" rows="10"></textarea><br>
+                                    <button type="submit" class="btn btn-lg btn-success" name="submit" id="submit">Predict</button>
+                                </form>
+                            </div>
+                        </div>	
+                    </div>
+
+                        <script>
+                            var source = $('#source').attr('data-text');
+                            var dest   = $('#dest');
+                            function typeWriter(text, n) {
+                                if (n < (text.length)) {
+                                    dest.html(text.substring(0, n+1));
+                                    n++;
+                                    setTimeout(function() {
+                                        typeWriter(text, n)
+                                    }, 150);
+                                }
+                            }
+                        
+                            typeWriter(source, 0);
+                        
+                            $SCRIPT_ROOT = "{{ url_for('newscheck') }}";
+                            $(function() {
+                                $('#submit').bind('click', function() {
+                                    var news = $('#news').val(); 
+                                    if(news === "" || news === " " || news === "\n" || news === null){
+                                        bootbox.alert({
+                                            size: "big",
+                                            title: "EMPTY FIELD",
+                                            message: "Please enter some news!",
+                                            backdrop: true
+                                        });
+                                    }
+                                    else{
+                                        $.getJSON($SCRIPT_ROOT, {
+                                            news: news,
+                                        }, function(data) {
+                                            if(data.result == "REAL"){
+                                                var src = "static/success.gif";
+                                            }
+                                            else{
+                                                var src = "static/fail.gif";
+                                            }
+                                            bootbox.alert({
+                                                size: "big",
+                                                title: "Prediction",
+                                                message: "<div align='center'><h2>News is "+data.result+"</h2><img style='width:240px;height:232px;' src='"+src+"'/></div>",
+                                                backdrop: true,
+                                                callback: function(){ 
+                                                    setTimeout(function(){
+                                                        //do what you need here
+                                                        location.reload();
+                                                    }, 100);
+                                                    
+                                                }
+                                            });
+                                        });
+                                    }
+                                    return false;
+                                });
+                            });
+
+                        </script>
+
+                </div>
+                <div class="newsside">
+                        <div class="latest_post">
+                          <h2><span>Fake News</span></h2>
+                          <div class="latest_post_container">
+                            <ul class="latest_postnav">
+                              <li>
+                                <div class="media"> <a href="single_page.html" class="media-left"> <img alt="" src="static/images (1).jpeg"> </a>
+                                  <div class="media-body"> <a href="https://www.indiatoday.in/fact-check/story/blot-clot-coronavirus-italian-doctors-who-1681512-2020-05-25" class="catg_title"> Blood clot the main reason for Covid-19 death, claims conspiracy theory</a> </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="media"> <a href="single_page.html" class="media-left"> <img alt="" src="static/images (2).jpeg"> </a>
+                                  <div class="media-body"> <a href="https://www.indiatoday.in/fact-check/story/fact-check-do-not-believe-this-hoax-about-microchip-implant-in-coronavirus-vaccine-1726551-2020-09-29" class="catg_title">Do not believe this hoax about microchip implant in coronavirus vaccine</a> </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="media"> <a href="single_page.html" class="media-left"> <img alt="" src="static/images (3).jpeg"> </a>
+                                  <div class="media-body"> <a href="https://www.thenewsminute.com/article/message-claiming-vaccinated-people-will-die-two-years-nobel-laureate-fake-149525" class="catg_title"> Message claiming ‘vaccinated people will die in two years’ by Nobel Laureate is FAKE</a> </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="media"> <a href="single_page.html" class="media-left"> <img alt="" src="static/images (4).jpeg"> </a>
+                                  <div class="media-body"> <a href="https://www.indiatoday.in/fact-check/story/not-mandatory-for-users-to-verify-their-social-media-accounts-within-3-months-1773816-2021-02-27" class="catg_title"> No, it’s not mandatory for users to verify their social media accounts within 3 months</a> </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="media"> <a href="single_page.html" class="media-left"> <img alt="" src="static/images (5).jpeg"> </a>
+                                  <div class="media-body"> <a href="https://gadgets.ndtv.com/apps/news/whatsapp-fake-message-circulation-red-tick-government-action-encryption-2451159" class="catg_title">WhatsApp Fake Message in Circulation to Falsely Claim Red Ticks Indicate Government’s Control</a> </div>
+                                </div>
+                              </li>
+                            </ul>
+
+                        </div>
+                    </div>
+             </div>
+             </div>
+            <div class="realnews">
+                <div class="single_post_content">
+                    <h2><span>Real News</span></h2>
+                    <div class="single_post_content_left">
+                      <ul class="business_catgnav  wow fadeInDown" style="padding-left: 0px;">
+                        <li>
+                          <figure class="bsbig_fig"> <a href="single_page.html" class="featured_img"> <img alt="" src="static/images.png"> <span class="overlay"></span> </a>
+                            <figcaption> <a href="https://www.bloomberg.com/news/articles/2021-06-16/india-plans-6-8-billion-program-to-boost-health-infrastructure">India Plans $6.8 Billion Program to Boost Health Infrastructure </a> </figcaption>
+                            <p>India is considering offering as much as 500 billion rupees ($6.8 billion) of credit incentives to boost health care infrastructure in the nation hit by the coronavirus pandemic, according to people familiar with the matter.</p>
+                          </figure>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="single_post_content_right">
+                      <ul class="spost_nav">
+                        <li>
+                          <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="static/download.jpeg"> </a>
+                              <div class="media-body"> <a href="https://timesofindia.indiatimes.com/business/india-business/sensex-surges-over-200-points-on-global-cues/articleshow/47715811.cms" class="catg_title"> Sensex surges over 200 points on global cues</a> </div>
+                            </div>
+                        </li>
+                        <li>
+                          <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="static/images (6).jpeg"> </a>
+                            <div class="media-body"> <a href="https://economictimes.indiatimes.com/industry/services/property-/-cstruction/new-residential-sales-share-in-mumbai-property-registration-only-29-in-may-report/articleshow/83140391.cms" class="catg_title"> New residential sales’ share in Mumbai property registration only 29% in May: Report </a> </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="static/images (7).jpeg"> </a>
+                            <div class="media-body"> <a href="https://timesofindia.indiatimes.com//india/space-diplomacy-india-to-set-up-ground-stations-for-5-neighbours/articleshow/67357464.cms" class="catg_title">Space diplomacy: India to set up ground stations for 5 neighbours</a> </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="static/images (8).jpeg"> </a>
+                            <div class="media-body"> <a href="https://www.ndtv.com/india-news/adani-group-cfo-jugeshinder-singh-to-ndtv-amid-frozen-funds-controversy-our-transparency-certificates-comprehensive-2465027" class="catg_title"> Adani CFO On Controversy Over Ownership, Investors</a> </div>
+                          </div>
+                        </li>
+                      </ul>
+            </div>
+
+        </header>
+      </div>
+        <footer>
+          <div class="footer_bottom">
+            <p class="copyright">Copyright &copy; 2022 <a href="index.html">Fake News Detector </a></p>
+            <p class="developer">Developed By <a href="https://graduatedunia.com/"> RAJEEV </a></p>
+          </div>
+        </footer>
+        
+        
+        
+    
+</body>
+</html>
